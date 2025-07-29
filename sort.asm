@@ -1,9 +1,9 @@
 section .data
-    numArray db 12, 62, 24, 22, 26
+    numArray db 12h, 62h, 24h, 22h, 26h
     arrayLen equ 5
     msg db "sorted array is- ", 10
     msgLen equ $-msg
-    fmt db "%d ", 0
+    fmt db "%x ", 0
 
 section .bss
     output resb 3
