@@ -42,7 +42,7 @@ main:
     rw 1, 1, msg, msgLen
 
     xor rbx, rbx
-    print_loop:
+    printLoop:
         cmp rbx, arrayLen
         jge done
 
@@ -53,7 +53,7 @@ main:
         call printf
 
         inc rbx
-        jmp print_loop
+        jmp printLoop
 
     done:
         mov eax, 0
